@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafiz Traders</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }/* Updated Welcome Section */
+.welcome-section {
+  background-color: white;
+  color: #0047ab;
+  padding: 100px 20px;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: fadeInScale 2s ease-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInScale {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.product-card {
+  background-color: #0047ab;
+  color: white;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-name {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.order-form {
+  background-color: #222;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-input[type="submit"] {
+  background-color: yellow;
+  color: #0047ab;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2em;
+}
+
+.form-input[type="submit"]:hover {
+  background-color: #0047ab;
+  color: yellow;
+}
+
+  </style>
+</head>
+<body>  <div class="welcome-section">
+    Welcome to Hafiz Traders
+  </div>  <div class="product-container">
+    <div class="product-card">
+      <div class="product-name">Cake</div>
+      <div class="price">৳20</div>
+      <p>Delicious and freshly baked.</p>
+      <form action="#">
+        <input class="form-input" type="number" placeholder="Quantity" required>
+        <input class="form-input" type="submit" value="Add to Cart">
+      </form>
+    </div><div class="product-card">
+  <div class="product-name">Chal (Rice)</div>
+  <div class="price">৳90/kg</div>
+  <p>Premium quality rice for daily needs.</p>
+  <form action="#">
+    <input class="form-input" type="number" placeholder="Quantity (kg)" required>
+    <input class="form-input" type="submit" value="Add to Cart">
+  </form>
+</div>
+
+  </div>  <div class="order-form">
+    <h2>Place Your Order</h2>
+    <form action="#" method="POST">
+      <input class="form-input" type="text" name="name" placeholder="Your Name" required>
+      <input class="form-input" type="email" name="email" placeholder="Your Email" required>
+      <input class="form-input" type="text" name="address" placeholder="Your Address" required>
+      <input class="form-input" type="number" name="phone" placeholder="Your Phone Number" required>
+      <input class="form-input" type="submit" value="Place Order">
+    </form>
+  </div></body>
+</html>
